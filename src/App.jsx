@@ -13,11 +13,8 @@ function App() {
 
   useEffect(() => {
     let set = localStorage.getItem("todos")
-    set = JSON.parse(set)
+    set = set ? JSON.parse(set) : []
     settodos(set)
-
-
-
   }, [])
 
 
