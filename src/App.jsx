@@ -75,7 +75,7 @@ function App() {
    
 
     settodos(newtodos)
-    localStorage.setItem("todos", JSON.stringify(todos))
+    localStorage.setItem("todos", JSON.stringify(newtodos))
 
   }
   const handeledit = (e) => {
